@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="mycss.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header id="home">
+        <h1 class="display-3">Welcome to Furniture Store</h1>
+        <p class="h4">Qualitive furniture here!</p>
+    </header>
+    <nav class="navbar navbar-expand-sm bg-secondary justify-content-center sticky-top">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="#contact">To order</a>
+            </li>
+          </ul>
+      </nav>
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+      <section id="products-list" class="p-5 my-5 bg-dark text-white rounded">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/Modern_table.jpg" alt="Los Angeles" class="d-block img-thumbnail w-50 text-white rounded">
+            <div class="carousel-caption">
+              <h3>Modern Table</h3>
+              <h4>Some text</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/chair.jpg" alt="Chicago" class="d-block img-fluid img-thumbnail  w-50 text-white rounded">
+            <div class="carousel-caption">
+              <h3>Chair</h3>
+              <h4>Some text</h4>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="images/sofa.jpg" alt="New York" class="d-block img-thumbnail w-50 text-white rounded">
+            <div class="carousel-caption">
+              <h3>Blue Sofa</h3>
+              <h4>Some text</h4>
+            </div>  
+          </div>
+        </div>
+      
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>  
+    </section>
+    <div class="card-group">
+      <div class="card">
+        <img id="img-card" src="images/factory.jpg" class="card-img-top" alt="factory">
+        <div class="card-body">
+          <h5 class="card-title">Some company name</h5>
+          <p class="card-text">Desc</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Some company name</small>
+        </div>
+      </div>
+      <div class="card">
+        <img id="img-card" src="images/factory.jpg" class="card-img-top" alt="factory">
+        <div class="card-body">
+          <h5 class="card-title">Some company name</h5>
+          <p class="card-text">Desc</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">USA</small>
+        </div>
+      </div>
+      <div class="card">
+        <img id="img-card" src="images/factory.jpg" class="card-img-top " alt="factory">
+        <div class="card-body">
+          <h5 class="card-title">Some company name</h5>
+          <p class="card-text">Desc</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Germany</small>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <section id="order" class="bg-dark bg-gradient">
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <option selected>Choose what to order</option>
+        <option value="1">Modern Table</option>
+        <option value="2">Chair</option>
+        <option value="3">Sofa</option>
+      </select>
+      
+      <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option selected>Choose number of furniture</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Other</option>
+      </select>
+    </section>
+    <hr>
+    <section id="contact">
+        <h2>To order</h2>
+        <div class="row container-md p-5 my-5 bg-dark text-white">
+            <div class="col"> 
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required></div>
+            <div class="col">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required></div>
+            <div class="col">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required></div>
+            <div class="col"><button type="submit" class="btn btn-secondary">Submit</button></div>
+          </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Furniture Store for assignment</p>
+    </footer>
+</body>
+<html>
